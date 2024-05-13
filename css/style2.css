@@ -18,10 +18,11 @@ nav{
     bottom: 0;
     height: 100%;
     left: 0;
-    background: #d64444;
-    /* width: 90px; */
-    /* width: 250px; */
-    width: 270px;
+    /* background: #d64444; */
+    /* background: #eec4c9; */
+    background: linear-gradient(to top, #ff7081, #ffbec6 );
+    /* width: 310px; */
+    width: 280px;
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -56,18 +57,22 @@ nav{
     float: left;
 }
 
+/* rajouter du shadow sur le dashboard ou sous le .logo mais crée une séparation */
 
 .li-navbar a {
     position: relative;
-    color: rgb(85, 83, 83);
+    /* color: rgb(85, 83, 83); */
+    color: #fff;
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
     display: table;
     width: 300px;
-    padding: 10px
+    padding: 10px;
     /* haut, droite, bas, gauche */ 
     /* padding: 8px 10px 10px 10px;*/ 
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(237, 87, 87);
 }
 
 .logo {
