@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/css/style2.css">
+    <title>Se connecter</title>
+</head>
+<body>
+
+    <!-- DEBUT Page de connexion - fin à la ligne 28 : est ce que je rajoute une image ou une icon?-->
+    <!-- <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="" id="" placeholder="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div> -->
+    <!-- FIN Page de connexion  inspo : https://www.youtube.com/watch?v=hlwlM4a5rxg&ab_channel=Codehal -->
+
+    <!-- DEBUT navbar vertical - fin à la ligne   :-->
+<nav>
+    <ul>
+        <!-- <li id="marque"><span>Pressing Sacré Coeur</span></li> -->
+        <li class="li-navbar logo">
+            <!-- retirer le a sur la photo de profil et le nom et prenom chercher les conflits dans le css -->
+                <!-- il s'agit d'une image temporaire, récupérer la photo de profil de l'user connecter -->
+                <img src="/src/196da5e3d4addcc30ce12d407662df81.jpeg" alt="">
+                <br>
+                <!-- récupérer le prénom et le nom de l'user connecter -->
+                <span>Prénom Nom</span>
+        </li>
+        
+        <li class="li-navbar"><a href="#">
+            <i class='bx bxs-dashboard' ></i>
+            <span class="nav-item">Dashboard</span>
+        </a>
+        </li>
+
+        <li class="li-navbar"><a href="./order.html">
+            <i class='bx bxs-t-shirt' ></i>
+            <span class="nav-item">Orders</span>
+        </a>
+            <!-- <ul>
+                <li>Tickets</li>
+            </ul> -->
+        </li>
+
+        <li class="li-navbar"><a href="./order.html">
+            <i class='bx bxs-star-half'></i>
+            <span class="nav-item">Clothes</span>
+        </a>
+        </li>
+
+        <li class="li-navbar"><a href="./customer.html">
+            <i class='bx bxs-user-detail'></i>
+            <span class="nav-item">Customers</span>
+        </a>
+        </li>
+
+        <li class="li-navbar"><a href="./depense.html">
+            <i class='bx bx-credit-card'></i>
+            <span class="nav-item">Dépenses</span>
+        </a>
+        </li>
+
+        <li class="li-navbar"><a href="./analytic.html">
+            <i class='bx bx-bar-chart' ></i>
+            <span class="nav-item">Analytics</span>
+            </a>
+        </li>
+
+        <li class="li-navbar"><a href="./profil.html">
+            <i class='bx bx-user'></i>
+            <span class="nav-item">Profil</span>
+            </a>
+        </li>
+        
+        <li class="li-navbar"><a href="./setting.html">
+            <i class='bx bxs-cog' ></i>
+            <span class="nav-item">Settings</span>
+            </a>
+        </li>
+        
+        <li class="li-navbar"><a href="#" class="logout" id="logout">
+            <i class='bx bx-log-out'></i>
+            <span class="nav-item">Log out</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+    <!-- je souhaiterais crée un fichier navbar.php et l'inclure dans chaque fichier pour ne pas repeter le code à chaque fois pour l'heure on res(e dans la simplicité et dans le html il s'agit simplement d'une maquette css)  -->
+    <!-- FIN inspo : https://www.codeinfoweb.com/building-an-interactive-job-dashboard-a-deep-dive-into-html-and-css/ -->
+
+</body>
+</html>
+
+<!-- Quza -->
+
+<!-- 
+Tablette en mode silgle app
+    Application en back et front end ceci est juste une maquette.
+- nous aurons besoin d'une base de donnée 
+- nous aurons besoin de session d'identification mais uniquement pour les employer 
+Front :
+- Une page d'authentification qui est la page d'acceuil
+    - Bonjour, input prénom, input nom.
+- Une page client : chaque clien est identifiable par son id unqique composée de 8 chiffres
+    - Ajouter un nouveau client - Sexe, Madame Mademoiselle Monsieur Nom, Prénom, numéro de telephone, date de naissance adresse email 1 ou plusieurs, résidence, recuperer la date et l'heure
+- order :  une nouevelle commande, on saisit le type d'articles la couleur, la photo si il y a une tache ou autre le prix est automatique
+ on fait le total et on met la remise calculer 10% 20% 30% 50% on recupere la date et l'heure et recupere qui as pris l'order
+le client est connectee a ses orders avec son id on peut voir l'historique de ses orders si elle ont ete regler ou pas si elles sont livrer ou pas et il est impossible de valider une commande non payer 
+on recupere le nombre d'orders des clients, combien ils nous ont rapporter par moi et année
+- vetements: 
+    un vetements a un id un prix pré enregistrer sauf les tapis
+-->
